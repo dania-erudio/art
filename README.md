@@ -1,2 +1,2 @@
-# portfolio
-Personal portfolio site project.
+# dania-erudio.github.io
+Personal project website for Erudio.
