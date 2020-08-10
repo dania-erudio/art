@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  
+  <script src="assets/js/lightbox.js"></script>
+</head>
+
+<body id="wrapper">
+<header>
+  <a href="index.html" style="color: black; text-decoration: none;"><h1>
+      Dania Rifki
+  </h1></a>
+  <nav>
+    <ul>
+      <li><a href="#" class="active">Artwork</a> / </li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="row">
+    <div class="col">
+      <img src="assets/images/1.webp" alt="" class="content" onclick="openTo(1)">
+      <img src="assets/images/5.webp" alt="" class="content" onclick="openTo(5)">
+    </div>
+    <div class="col">
+      <img src="assets/images/2.webp" alt="" class="content" onclick="openTo(2)">
+      <img src="assets/images/6.webp" alt="" class="content" onclick="openTo(6)">
+    </div>
+    <div class="col">
+      <img src="assets/images/3.webp" alt="" class="content" onclick="openTo(3)">
+      <img src="assets/images/7.webp" alt="" class="content" onclick="openTo(7)">
+    </div>
+    <div class="col">
+      <img src="assets/images/4.webp" alt="" class="content" onclick="openTo(4)">
+      <img src="assets/images/8.png" alt="" class="content" onclick="openTo(8)">
+    </div>
+  </div>
+</main>
+
+<footer>
+  <nav>
+    <ul>
+      <li><a href="#" class="active">Artwork</a> / </li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <br>
+</footer>
+
+</body>
+
+<div id="lightbox">
+  <span class="close cursor" onclick="quit()">&#10005;</span>
+  <div class="gallery">
+    <div id="photoNumber" class="photoNumber">null</div>
+    <div class="slide">
+      <img src="assets/images/1.webp">
+    </div>
+    <div class="slide">
+      <img src="assets/images/2.webp">
+    </div>
+    <div class="slide">
+      <img src="assets/images/3.webp">
+    </div>
+    <div class="slide">
+      <img src="assets/images/4.webp">
+    </div>
+    <div class="slide">
+      <img src="assets/images/5.webp">
+    </div>
+    <div class="slide">
+      <img src="assets/images/6.webp">
+    </div>
+    <div class="slide">
+      <img src="assets/images/7.webp">
+    </div>
+    <div class="slide">
+      <img src="assets/images/8.png">
+    </div>
+
+    <a class="prev" onclick="prevSlide()">&#10094;</a>
+    <a class="next" onclick="nextSlide()">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  </div>
+</div>
+
+</html>
