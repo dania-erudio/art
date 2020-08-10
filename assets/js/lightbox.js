@@ -47,7 +47,7 @@ repaint(slideIndex);
  */
 
 function nextSlide() {
-  if (slideIndex == 16) {
+  if (slideIndex === 8) {
     slideIndex = 1;
     repaint(slideIndex);
   }
@@ -62,7 +62,7 @@ function nextSlide() {
 
 function prevSlide() {
   if (slideIndex == 1) {
-    slideIndex = 16;
+    slideIndex = 8;
     repaint(slideIndex);
   }
   else repaint(slideIndex -= 1);
@@ -87,7 +87,7 @@ function openTo(n) {
 
 function repaint(n) {
   var gallery = document.getElementsByClassName("slide");
-  document.getElementById('photoNumber').innerHTML = slideIndex + '/16';
+  document.getElementById('photoNumber').innerHTML = slideIndex + '/8';
   if (n > gallery.length) {slideIndex = 1}
   if (n <= 0) {slideIndex = slides.length}
   var i;
