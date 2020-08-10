@@ -1,4 +1,3 @@
-# dania-erudio.github.io
-Personal project website for Erudio.
+# [dania-erudio.github.io](https://dania-erudio.github.io/)
 
-[Icons are made by FontAwesome](https://fontawesome.com/license).
+Personal project website for Erudio.
