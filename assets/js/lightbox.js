@@ -10,15 +10,15 @@
 document.onkeydown = function(evt) {
   evt = evt || window.event;
   // move to next slide if right arrow
-  if (evt.keyCode == 39) {
+  if (evt.keyCode === 39) {
     nextSlide();
   }
   // move to prev slide if left arrow
-  else if (evt.keyCode == 37) {
+  else if (evt.keyCode === 37) {
     prevSlide();
   }
   // close if [ESC] key
-  else if (evt.keyCode == 27) {
+  else if (evt.keyCode === 27) {
     quit();
   }
 };
@@ -61,7 +61,7 @@ function nextSlide() {
  */
 
 function prevSlide() {
-  if (slideIndex == 1) {
+  if (slideIndex === 1) {
     slideIndex = 8;
     repaint(slideIndex);
   }
